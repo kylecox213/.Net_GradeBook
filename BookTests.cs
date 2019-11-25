@@ -16,12 +16,15 @@ namespace GradeBook.Tests
             book.AddGrade(77.3);
 
             // the act section of a unit test: where a computation of the test data objects is performed
-
+            var result = book.GetStatistics();
             // var actual = x * y;
-            var actual = x + y;
+            // var actual = x + y;
 
             // the assert section of a unit test: where assertions are made against the dta values that are to be computed
-            Assert.Equal(expected, actual);
+            // Assert.Equal(expected, actual);
+            Assert.Equal(85.6, result.Average, 1);
+            Assert.Equal(90.5, result.High, 1);
+            Assert.Equal(77.3, result.Low, 1);
         }
     }
 }
