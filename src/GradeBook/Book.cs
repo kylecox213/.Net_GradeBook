@@ -39,17 +39,19 @@ namespace GradeBook
             result.Low = double.MaxValue;
             // create a foreach loop to iterate through the grades array
 
-            // foreach (var grade in grades)
-            // var i = 0;
-            // while(i < grades.Count)
+   
             for (var i = 0; i < grades.Count; i++)
-            // do
             {
+                if(grades[i] == 42.1)
+                    {
+                        // break;
+                        continue;
+                        goto done;
+                    }
             
                 result.Low = Math.Min(grade[i], result.Low);
                 result.High = Math.Max(grade[i], result.High);
                 result.Average += grades[i];
-                // i++;
             };
      
             // use the Count property to total the number of grades
@@ -57,6 +59,7 @@ namespace GradeBook
             result.Average /= grades.Count;
 
             // write the the result to the console
+            // done:
             return result;
         }
         // add the private access modifer to render the grades field and name field 
