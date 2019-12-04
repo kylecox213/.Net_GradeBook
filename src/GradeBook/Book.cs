@@ -17,7 +17,15 @@ namespace GradeBook
         public void AddGrade(double grade)
         // declare a list of double named grades outside of the addGrade method to make a field instead of a local variable
         {
-            grades.Add(grade);
+            if(grade == 90.0)
+            if(grade <= 100 && grade >= 0)
+                {
+                    grades.Add(grade);
+                }
+                else
+                {
+                    Console.WriteLine("Invalid value");
+                }
         }
         // public method named GetStatistics with an object return type "Statistics"
         public Statistics GetStatistics()
@@ -30,21 +38,20 @@ namespace GradeBook
             // create a variable for storing the minimum potential value
             result.Low = double.MaxValue;
             // create a foreach loop to iterate through the grades array
-            foreach (var grade in grades)
+
+            // foreach (var grade in grades)
+            // var i = 0;
+            // while(i < grades.Count)
+            for (var i = 0; i < grades.Count; i++)
+            // do
             {
-                // add the total number of numbers within the array to the result variable
-
-                // if(number > highGrade) {
-                //     highGrade = number;
-                // }
-
-                // set the lowGrade and highGrade variables to the MathMin/Max method
-                // pass in parameters grade and result.low/high
-                result.Low = Math.Min(grade, result.Low);
-                result.High = Math.Max(grade, result.High);
-                result.Average += grade;
-            }
             
+                result.Low = Math.Min(grade[i], result.Low);
+                result.High = Math.Max(grade[i], result.High);
+                result.Average += grades[i];
+                // i++;
+            };
+     
             // use the Count property to total the number of grades
             // divide the total number of grades by the sum; which is stored in the result variable
             result.Average /= grades.Count;
