@@ -32,10 +32,19 @@ namespace GradeBook
                     book.AddGrade(grade);
                 }
 
-                catch(Exception ex)
+                catch(ArgumentException ex)
                 {
                     Console.WriteLine(ex.Message);
-                    throw;
+                }
+
+                catch(FormatException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+
+                finally
+                {
+                    Console.WriteLine("**");
                 }
             }
 
