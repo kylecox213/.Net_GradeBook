@@ -8,17 +8,21 @@
     ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
-    "C:\\Users\\acox\\.nuget\\packages\\": {}
+    "C:\\Users\\acox\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\acox\\gradebook\\src\\GradeBook\\GradeBook.csproj",
+      "projectUniqueName": "C:\\Users\\acox\\Documents\\other proj\\.Net_GradeBook\\src\\Gradebook\\GradeBook.csproj",
       "projectName": "GradeBook",
-      "projectPath": "C:\\Users\\acox\\gradebook\\src\\GradeBook\\GradeBook.csproj",
+      "projectPath": "C:\\Users\\acox\\Documents\\other proj\\.Net_GradeBook\\src\\Gradebook\\GradeBook.csproj",
       "packagesPath": "C:\\Users\\acox\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\acox\\gradebook\\src\\GradeBook\\obj\\",
+      "outputPath": "C:\\Users\\acox\\Documents\\other proj\\.Net_GradeBook\\src\\Gradebook\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "C:\\Users\\acox\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

@@ -44,14 +44,13 @@ namespace GradeBook
         public void AddGrade(double grade)
         // declare a list of double named grades outside of the addGrade method to make a field instead of a local variable
         {
-            if(grade == 90.0)
             if(grade <= 100 && grade >= 0)
                 {
                     grades.Add(grade);
                 }
                 else
                 {
-                    Console.WriteLine("Invalid value");
+                    throw new ArgumentException($"Invalid {nameof(grade)}");
                 }
         }
         // public method named GetStatistics with an object return type "Statistics"
@@ -71,21 +70,40 @@ namespace GradeBook
             {
                 if(grades[i] == 42.1)
                     {
-                    // covers various jump statements
-                        // break;
-                        continue;
-                        goto done;
+                        break;
                     }
             
-                result.Low = Math.Min(grade[i], result.Low);
-                result.High = Math.Max(grade[i], result.High);
+                result.Low = Math.Min(grades[i], result.Low);
+                result.High = Math.Max(grades[i], result.High);
                 result.Average += grades[i];
             };
      
             // use the Count property to total the number of grades
             // divide the total number of grades by the sum; which is stored in the result variable
-            result.Average /= grades.Count;
+            
+            switch(result.Average)
+                {
+                  case var d when d >= 90.0:
+                    result.Letter = 'A';
+                    break;
 
+                  case var d when d >= 80.0:
+                    result.Letter = 'B';
+                    break;
+
+                  case var d when d >= 70.0:
+                    result.Letter = 'C';
+                    break;
+
+                  case var d when d >= 60.0:
+                    result.Letter = 'D';
+                    break;
+
+                  default:
+                    result.Letter = 'F';
+                    break;
+
+                }
             // write the the result to the console
             // done:
             return result;

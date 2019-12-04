@@ -9,3 +9,14 @@ C:\Users\acox\gradebook\src\GradeBook\obj\Debug\netcoreapp3.0\GradeBook.Assembly
 C:\Users\acox\gradebook\src\GradeBook\obj\Debug\netcoreapp3.0\GradeBook.AssemblyInfo.cs
 C:\Users\acox\gradebook\src\GradeBook\obj\Debug\netcoreapp3.0\GradeBook.dll
 C:\Users\acox\gradebook\src\GradeBook\obj\Debug\netcoreapp3.0\GradeBook.pdb
+C:\Users\acox\Documents\other proj\.Net_GradeBook\src\Gradebook\obj\Debug\netcoreapp3.0\GradeBook.csprojAssemblyReference.cache
+C:\Users\acox\Documents\other proj\.Net_GradeBook\src\Gradebook\obj\Debug\netcoreapp3.0\GradeBook.AssemblyInfoInputs.cache
+C:\Users\acox\Documents\other proj\.Net_GradeBook\src\Gradebook\obj\Debug\netcoreapp3.0\GradeBook.AssemblyInfo.cs
+C:\Users\acox\Documents\other proj\.Net_GradeBook\src\Gradebook\obj\Debug\netcoreapp3.0\GradeBook.dll
+C:\Users\acox\Documents\other proj\.Net_GradeBook\src\Gradebook\obj\Debug\netcoreapp3.0\GradeBook.pdb
+C:\Users\acox\Documents\other proj\.Net_GradeBook\src\Gradebook\bin\Debug\netcoreapp3.0\GradeBook.exe
+C:\Users\acox\Documents\other proj\.Net_GradeBook\src\Gradebook\bin\Debug\netcoreapp3.0\GradeBook.deps.json
+C:\Users\acox\Documents\other proj\.Net_GradeBook\src\Gradebook\bin\Debug\netcoreapp3.0\GradeBook.runtimeconfig.json
+C:\Users\acox\Documents\other proj\.Net_GradeBook\src\Gradebook\bin\Debug\netcoreapp3.0\GradeBook.runtimeconfig.dev.json
+C:\Users\acox\Documents\other proj\.Net_GradeBook\src\Gradebook\bin\Debug\netcoreapp3.0\GradeBook.dll
+C:\Users\acox\Documents\other proj\.Net_GradeBook\src\Gradebook\bin\Debug\netcoreapp3.0\GradeBook.pdb
