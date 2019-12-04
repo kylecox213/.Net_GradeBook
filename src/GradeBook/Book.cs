@@ -14,6 +14,33 @@ namespace GradeBook
             // use the this variable to make the distinction between the field name on the left and the parameter on the right
             Name = name;
         }
+
+        public void AddLetterGrade (char letter)
+        {
+            switch(letter)
+                {
+                    case 'A':
+                        AddGrade(90);
+                        break;
+
+                    case 'B':
+                        AddGrade(80);
+                        break;
+
+                    case 'C':
+                        AddGrade(70);
+                        break;
+
+                    case 'D':
+                        AddGrade(60);
+                        break;
+
+                    default:
+                        AddGrade(0);
+                        break;
+
+                }
+        }
         public void AddGrade(double grade)
         // declare a list of double named grades outside of the addGrade method to make a field instead of a local variable
         {
@@ -44,6 +71,7 @@ namespace GradeBook
             {
                 if(grades[i] == 42.1)
                     {
+                    // covers various jump statements
                         // break;
                         continue;
                         goto done;
