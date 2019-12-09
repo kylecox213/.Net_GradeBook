@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\acox\\Documents\\other proj\\.Net_GradeBook\\src\\Gradebook\\GradeBook.csproj",
+      "projectUniqueName": "C:\\Users\\acox\\Documents\\other proj\\.Net_GradeBook\\src\\GradeBook\\GradeBook.csproj",
       "projectName": "GradeBook",
-      "projectPath": "C:\\Users\\acox\\Documents\\other proj\\.Net_GradeBook\\src\\Gradebook\\GradeBook.csproj",
+      "projectPath": "C:\\Users\\acox\\Documents\\other proj\\.Net_GradeBook\\src\\GradeBook\\GradeBook.csproj",
       "packagesPath": "C:\\Users\\acox\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\acox\\Documents\\other proj\\.Net_GradeBook\\src\\Gradebook\\obj\\",
+      "outputPath": "C:\\Users\\acox\\Documents\\other proj\\.Net_GradeBook\\src\\GradeBook\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -62,7 +62,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

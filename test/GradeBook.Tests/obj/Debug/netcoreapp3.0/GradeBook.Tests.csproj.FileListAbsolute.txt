@@ -92,3 +92,8 @@ C:\Users\acox\gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp3.0\GradeBook.T
 C:\Users\acox\gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp3.0\GradeBook.Tests.csproj.CopyComplete
 C:\Users\acox\gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp3.0\GradeBook.Tests.dll
 C:\Users\acox\gradebook\test\GradeBook.Tests\obj\Debug\netcoreapp3.0\GradeBook.Tests.pdb
+C:\Users\acox\Documents\other proj\.Net_GradeBook\test\GradeBook.Tests\obj\Debug\netcoreapp3.0\GradeBook.Tests.csprojAssemblyReference.cache
+C:\Users\acox\Documents\other proj\.Net_GradeBook\test\GradeBook.Tests\obj\Debug\netcoreapp3.0\GradeBook.Tests.AssemblyInfoInputs.cache
+C:\Users\acox\Documents\other proj\.Net_GradeBook\test\GradeBook.Tests\obj\Debug\netcoreapp3.0\GradeBook.Tests.AssemblyInfo.cs
+C:\Users\acox\Documents\other proj\.Net_GradeBook\test\GradeBook.Tests\obj\Debug\netcoreapp3.0\GradeBook.Tests.dll
+C:\Users\acox\Documents\other proj\.Net_GradeBook\test\GradeBook.Tests\obj\Debug\netcoreapp3.0\GradeBook.Tests.pdb

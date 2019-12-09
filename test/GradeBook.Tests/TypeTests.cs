@@ -5,10 +5,47 @@ namespace GradeBook.Tests
 
 // press f12 to navigate to a metaview that displays whether or not a data type is a value, or reference type,
 // as well as displaying their shortcuts and commonly utilized their keywords, shortcuts, and parameters
-
 {
+    public delegate string WriteLogDelegate( string logMessage);
+
     public class TypeTests
     {
+        // declare a private field to track the frequency of method invocation
+        int count = 0;
+        [Fact]
+        // create a new type by defining a new delegate 
+                // class=methods, properties, fields.....delegates define the return type, parameter --->
+                // types and numbers of parameters that can be passed in to the method; method structure definition
+
+        // define a delegate that permits the user to log messages
+        public void WriteLogDelegateCanPointToMethod()
+        {
+            WriteLogDelegate log;
+            log += ReturnMessage;
+            log += IncrementCount;
+            
+            var result = log("Error 909");
+            Assert.Equal(3, Count);
+            // invoking the log method will call ReturnMessage twice and IncrementCount once
+        }
+
+        string IncrementCount(string message)
+            {
+                // increment the method frequency tracker
+                count++;
+                //return the log message in lowercase 
+                return message.ToLower();        
+            }
+
+        string returnMessage(string message)
+            {
+                // increment the method frequency tracker
+                count++;
+                //return the log message
+                return message;        
+            }
+
+
         [Fact]
         // test to demonstrate that strings are immutable; regardless of the modifcations to a string parameter;
         // the string is copied and no change can be made to the underlying string parameter
