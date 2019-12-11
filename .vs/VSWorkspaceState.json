@@ -3,9 +3,12 @@
     "",
     "\\src",
     "\\src\\GradeBook",
+    "\\src\\GradeBook\\bin\\Release\\netcoreapp3.0",
+    "\\src\\GradeBook\\obj\\Debug",
+    "\\src\\GradeBook\\obj\\Release\\netcoreapp3.0",
     "\\test",
     "\\test\\GradeBook.Tests"
   ],
-  "SelectedNode": "\\src\\GradeBook\\Program.cs",
+  "SelectedNode": "\\test\\GradeBook.Tests\\TypeTests.cs",
   "PreviewInSolutionExplorer": false
 }
