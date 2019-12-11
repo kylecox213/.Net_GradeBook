@@ -19,7 +19,7 @@ namespace GradeBook
         // create a property with the name Name
         public string Name
         {
-            // create public getters and setters that will allow users to set a name
+            // create public getter and setter accessors for returning and setting property values
             get;
             set;
         }
