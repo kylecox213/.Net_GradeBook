@@ -29,3 +29,5 @@ namespace GradeBook.Tests
         }
     }
 }
+
+// source now contains files necessary to run on vs and vsc
