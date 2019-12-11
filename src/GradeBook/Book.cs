@@ -25,6 +25,7 @@ namespace GradeBook
         }
     }
 
+    // .net framework convention dictates that interface nomenclature begins with I
     public interface IBook
     {
         void AddGrade(double grade);
@@ -47,14 +48,18 @@ namespace GradeBook
         }
 
         public abstract event GradeAddedDelegate GradeAdded;
+
         public abstract void AddGrade(double grade);
 
         // public method named GetStatistics with an object return type "Statistics"
         public abstract Statistics GetStatistics();
     }
 
-    public class DiskBook : Book
-    {
+        // create diskbook class that will implement the ibook interface
+        public class DiskBook : Book
+        {
+
+        }
         public DiskBook(string name) : base(name)
         {
         }
@@ -62,20 +67,30 @@ namespace GradeBook
         public override event GradeAddedDelegate GradeAdded;
 
         public override void AddGrade(double grade)
-        {
+        {   
+            // implement file class and appendtext method to open a txt file
+            // utilizing $"{Name} is string interpolation to apply it to Book;
+            // then returns an object and writes to the end of the file (append)
             using(var writer = File.AppendText($"{Name}.txt"))
             {                
+                // pass a grade into the writer variable via the WriteLine method
                 writer.WriteLine(grade);
+                
 
+                //if the gradeAdded is not null...
                 if(GradeAdded != null)
                 {
+                    // add grade to DiskBook and create a new instance of event arguments 
                     GradeAdded(this, new EventArgs());
                 }
+                // ---** the using keyword is overloaded and will close files once the code block is complete
             }
         }
 
+        // the get statistics method will read all of the grades that have been written into the DiskBook
         public override Statistics GetStatistics()
         {
+            // implement getStatistics ans store in var result
             var result = new Statistics();
 
             using(var reader = File.OpenText($"{Name}.txt"))
